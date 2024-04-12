@@ -41,6 +41,17 @@ body {
     padding: 1em;
 }
 
+.task-gray {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: gray;
+}
+
 .task-done {
     text-decoration: line-through;
+}
+
+.task-tabs div {
+    cursor: pointer;
 }
