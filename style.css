@@ -1,44 +1,73 @@
 body {
     margin: 0;
-    background-image: url("image/들판.jpg");
+    background-image: url("image/gray-wall.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: '둥글';
+}
+
+.tdl {
+    color: red;
+    padding-bottom: 40px;
+}
+
+@font-face {
+    font-family: '둥글';
+    font-style: 'normal';
+    font-weight: 400;
+    src: url('KCC-Ganpan.woff');
 }
 
 .container {
+    text-align: center;
     background-color: white;
-    min-height: 100vh;
+    min-height: 85vh;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    max-width: 500px;
+    height: 100%;
+    margin-top: 7.5vh;
+    padding-top: 40px;
+}
+
+.input-area {
+    position: relative;
+}
+
+#task-input {
+    width: 93%;
+    border-radius: 5px
 }
 
 .task-area {
-    border: 1px solid lightgray;
+    border: 3px solid skyblue;
 }
 
 .task-tabs {
     display: flex;
-    border: 1px solid lightgray;
     position: relative;
 }
 
 .task-tabs div {
     padding: 1em;
+    cursor: pointer;
 }
 
 #under-line {
     height: 4px;
-    background-color: pink;
+    background-color: greenyellow;
     position: absolute;
-    width: 68px;
-    left: 0px;
-    top: 52px;
-    padding: 0px;
+    width: 0;
+    left: 0;
+    top: 0;
+    padding: 0;
+    transition: 0.5s;
 }
 
 .task {
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    border-top: 3px solid skyblue;
 }
 
 .task-gray {
@@ -46,12 +75,21 @@ body {
     justify-content: space-between;
     padding: 1em;
     background-color: gray;
+    border-top: 3px solid skyblue;
 }
 
 .task-done {
     text-decoration: line-through;
 }
 
-.task-tabs div {
-    cursor: pointer;
+.check1-button {
+    color: black;
+    background-color: gray;
+    border: none;
+}
+
+.check2-button {
+    color: black;
+    background-color: white;
+    border: none;
 }
